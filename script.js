@@ -9,18 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
           const targetId = link.getAttribute("href").substring(1);
           const targetSection = document.getElementById(targetId);
 
-          // Remove 'active' class from all sections
           sections.forEach(section => section.classList.remove("active"));
 
-          // Add 'active' class to the target section
+
           targetSection.classList.add("active");
 
-          // Check if the feedback section is active
+
           if (targetId === 'feedback') {
-              // Show the feedback form when feedback section is active
+
               document.getElementById('feedback').style.display = 'block';
           } else {
-              // Hide the feedback form on other pages
+    
               document.getElementById('feedback').style.display = 'none';
           }
       });
@@ -61,16 +60,16 @@ const timer = setInterval(function() {
 }, 1000);
 
 
-// Wait for the DOM content to load
+
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('.feedback-form');
   const thankYouMessage = document.getElementById('thank-you-message');
 
-  // When the form is submitted
-  form.addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent the default form submission behavior
 
-      // Reset the form after submission
+  form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+
       form.reset();
 
       
@@ -142,5 +141,5 @@ document.getElementById('calculator-form').addEventListener('submit', function(e
 
 document.querySelector('.feedback-form').addEventListener('submit', function (event) {
     event.preventDefault(); 
-    document.querySelector('#thank-you-message').style.display = 'block'; // Show the message
+    document.querySelector('#thank-you-message').style.display = 'block'; 
 });
