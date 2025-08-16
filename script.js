@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const targetDate = new Date("June 8, 2025 00:00:00").getTime();
+const targetDate = new Date("June 8, 2026 00:00:00").getTime();
 
 
 const timer = setInterval(function() {
@@ -143,3 +143,4 @@ document.querySelector('.feedback-form').addEventListener('submit', function (ev
     event.preventDefault(); 
     document.querySelector('#thank-you-message').style.display = 'block'; 
 });
+
